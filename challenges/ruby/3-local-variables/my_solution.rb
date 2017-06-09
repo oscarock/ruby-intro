@@ -3,14 +3,14 @@
 
 # Tu solucion abajo:
 
-num1 = 4
-num2 = 9
+num1 = 5
+num2 = 2
 
-sum = num2 + num1
-difference = num1 - num2
-quotient = num1.to_f / num2
-modulus = num1 % num2
-product = num1 * num2
+puts num1 + num2
+puts num1 - num2
+puts num1.to_f / num2
+puts num1.to_f % num2
+
 
 # Pruebas NO LAS BORRES
 
