@@ -1,13 +1,6 @@
-# Simple Substrings
-
-# Tu solucion abajo:
-
-def welcome(str)
-  if str.include? "CA"
-    return "Welcome to California"
-  else
-    return "You should move to California"
-  end
+def welcome(direccion)
+	(direccion.include? 'CA') ? 'Welcome to California' : 'You should move to California'
 end
 
 puts welcome("CA")
+puts welcome("BO")
