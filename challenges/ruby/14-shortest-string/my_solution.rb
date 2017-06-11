@@ -3,11 +3,9 @@
 #Tu solucion abajo:
 
 def shortest_string(array)
-  return nil if array.empty?
-  array.sort_by! {|x| x.length}
-  array.first
+	array.min_by{ |elem| elem.length }  # => "three"
 end
 
-def shortest_string(array)
-  array.min({|a,b| a.length <=> b.length})
-end
+p shortest_string(['cat', 'zzzzzzz', 'apples'])  # => "cat"
+p shortest_string(['']) # => ''
+p shortest_string([]) # => nil
