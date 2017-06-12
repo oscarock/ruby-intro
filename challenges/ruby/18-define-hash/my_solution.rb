@@ -2,10 +2,10 @@
 
 # Tu solucion abajo:
 
-
+my_info = {first_name: "oscar", last_name: "diaz", hometown: "prueba", age: 26}
+p my_info
 
 # Pruebas NO LAS BORRES
-
 
 describe 'my_info' do
   REQUIRED_KEYS = [:first_name, :last_name, :hometown, :age]
