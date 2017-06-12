@@ -2,21 +2,19 @@
 
 # Tu solucion abajo:
 
-[1,2,3,4,5,6]
-upper = 4
-lower = 2
-
-
-def count_between(arr, upper, lower)
-  arr.count {|x| (x >= lower) && (x<= upper)}
-end
-
-def count_between(arr, lower, upper)
-  count = 0
-  arr.each do |x|
-    if (x >= lower) && (x<= upper)
-      count = count + 1
+def count_between(array,limit1,limit2)
+    contador = 0
+    array.each do |elem|
+        if elem >= limit1 && elem <= limit2
+            contador = contador + 1
+        end
     end
-  end
-  count
+    contador
 end
+
+p count_between([10, 20, 30], 10, 30) # => 3
+p count_between([-10, 1, 2], 0, 100)  # => 2
+
+# def count_between(arr, upper, lower)
+#   arr.count {|x| (x >= lower) && (x<= upper)}
+# end
