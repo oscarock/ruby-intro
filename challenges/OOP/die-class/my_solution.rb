@@ -5,7 +5,6 @@
 # 1. Solucion Inicial
 class Die
 	def initialize(n_lados)
-		#puts "LOS LADOS SON: #{n_lados}"
 		if n_lados < 1
 			raise ArgumentError.new("Numero Menor a 1")
 		else
