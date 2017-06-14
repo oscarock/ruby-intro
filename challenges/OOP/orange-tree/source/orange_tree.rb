@@ -3,6 +3,9 @@ class NoOrangesError < StandardError
 end
 
 class OrangeTree
+  #####mi codigo#####
+  attr_accessor :height, :age
+
   # Envejeze el arbol
   def age!
   end
@@ -21,8 +24,12 @@ class OrangeTree
 end
 
 class Orange
+  #####mi codigo#####
+  attr_accessor :diameter
+  
   # Crea una naranja con determinado +diameter+
   def initialize(diameter)
+    @diameter = diameter
   end
 end
 
