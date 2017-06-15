@@ -159,5 +159,3 @@ class Flea
 end
 
 ozu = Dog.new('ozu')
-
-
