@@ -21,6 +21,12 @@ connection.execute(<<-SQL
 puts "-"*50
 print "inserting some data ... "
 
+# connection.execute(<<-SQL
+#   insert into carros
+#   values ('mazda', 'ERT123', '4', '2017-06-22 10:05:25 -0500');
+#   SQL
+# )
+
 10.times do
 	num_pasajeros = rand(4)
 	fecha_creado = Time.new
@@ -30,7 +36,8 @@ print "inserting some data ... "
   # fake_data = Hash[labels.map(&:to_sym).zip data.map{|d| d.gsub("'", "''")}]
 
   # Otra forma de hacerlo,
-  faker_registros = Faker::Vehicle.manufacture.gsub("'", "''"), Faker::Vehicle.vin.gsub("'", "''")
+  faker_registros = Faker::Vehicle.manufacture.gsub("'", "''"),
+                    Faker::Vehicle.vin.gsub("'", "''")
                # Faker::Name.num_pasajeros.gsub("'", "''"),
                # Faker::Name.fecha_creado.gsub("'", "''")
 
@@ -42,4 +49,3 @@ print "inserting some data ... "
 end
 
 puts "done."
-
